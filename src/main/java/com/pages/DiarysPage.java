@@ -10,7 +10,7 @@ public class DiarysPage extends BasePage {
     By menu_profile = By.id("menu-profile-pic");
 
     // Page Locators
-    By charm_logo = By.cssSelector("img[alt='Charm']");
+    By charm_logo = By.cssSelector("");
     By chadmin_name = By.id("username");
     public DiarysPage(WebDriver driver) {
         super(driver);
@@ -21,7 +21,7 @@ public class DiarysPage extends BasePage {
     public String loginConfirmend() {
         fluentWait(menu_profile);
         fluentWait(charm_logo);
-        return driver.findElement(chadmin_name).getText();
+        return driver.findElement(cn_name).getText();
         //click(menu_profile);
     }
 
