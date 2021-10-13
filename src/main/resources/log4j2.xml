@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="log-path">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-6p] %c{1} - %m%n"/>
+        </Console>
+
+        <RollingFile name="file-log" fileName="${log-path}/RA_logfile.log"
+                     filePattern="${log-path}/RollingAppender_logfile-%d{yyyy-MM-dd_HH}.log">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} - %msg%n%throwable{short.lineNumber}</pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 mb" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+
+        <File name="logfile" fileName=".\logs\loglatest.log">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} - %msg%n"/>
+        </File>
+
+    </Appenders>
+
+
+    <Loggers>
+        <Logger name="RollingAppender" level="info" additivity="false">
+            <appender-ref ref="file-log" level="info"/>
+        </Logger>
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="logfile" level="info"/>
+            <AppenderRef ref="file-log" level="info"/>
+        </Root>
+
+    </Loggers>
+</Configuration>

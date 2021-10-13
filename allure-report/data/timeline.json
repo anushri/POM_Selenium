@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "CGL-925Y253",
+    "children" : [ {
+      "name" : "5184@CGL-925Y253.main(1)",
+      "children" : [ {
+        "name" : "VerifyUserIsLogged",
+        "uid" : "d76da7ad6a1d9b2",
+        "parentUid" : "2b57ac3db7670344808a6a67b87b7140",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627884415770,
+          "stop" : 1627884428758,
+          "duration" : 12988
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b57ac3db7670344808a6a67b87b7140"
+    } ],
+    "uid" : "6170e2418a2ef70b39541e2538263c68"
+  } ]
+}

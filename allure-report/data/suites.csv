@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 02 16:06:55 AEST 2021","Mon Aug 02 16:07:08 AEST 2021","12988","Default Suite","Selenium","com.tests.Login","com.tests.Login","VerifyUserIsLogged","VerifyUserIsLogged","Verify Logged in User"

@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.tests.Example",
+    "children" : [ {
+      "name" : "VerifyUserIsLogged",
+      "uid" : "d76da7ad6a1d9b2",
+      "parentUid" : "f842bc8ca34e1bf22f5ebd31a9572d02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627884415770,
+        "stop" : 1627884428758,
+        "duration" : 12988
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.tests.Example"
+  } ]
+}

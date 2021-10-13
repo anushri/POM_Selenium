@@ -1,0 +1,11 @@
+[ {
+  "uid" : "d76da7ad6a1d9b2",
+  "name" : "VerifyUserIsLogged",
+  "time" : {
+    "start" : 1627884415770,
+    "stop" : 1627884428758,
+    "duration" : 12988
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
